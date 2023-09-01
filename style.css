@@ -1,7 +1,8 @@
 :root {
-    --height: 198px;
+    --height: 558px;
     --main_color: #23b6fa;
-  }
+    --future_color: #32a852;
+}
 
 
 #octopus_head {
@@ -10,17 +11,21 @@
     width: calc(var(--height) / 2);
     border-radius: 0 var(--height) var(--height) 0;
     background-color: var(--main_color);
-    left: 250px;
+    left: 500px;
     top: 30px;
 }
 
 .leg{
     position: absolute;
-    right: 98px;
+    right: calc(var(--height)/2);
     height: 38px;
-    /* width: 100px; */
     background-color: var(--main_color);
     border-radius: 20px 0 0 20px;
+}
+
+.future{
+    background-color: var(--future_color);
+    z-index: -1;
 }
 
 .text{
@@ -33,26 +38,151 @@
     line-height: 0.5;
 }
 
-#english_language{
-    width: 250px;
+p{
+    color: black;
 }
+
+
+
+#english_language{
+    width: 500px;
+}
+
+
 
 #boldness{
     top: 40px;
-    width: 75px;
+    width: 100px;
 }
+#boldness.future{
+    width: 200px;
+}
+
+
 
 #python{
     top: 80px;
-    width: 125px;
+    width: 200px;
 }
+#python.future{
+    width: 250px;
+}
+
+
 
 #HTML{
     top: 120px;
-    width: 100px;
+    width: 150px;
 }
+#HTML.future{
+    width: 200px;
+}
+
+
 
 #CSS{
     top: 160px;
     width: 100px;
+}
+#CSS.future{
+    width: 200px;
+}
+
+
+
+#blender{
+    top: 200px;
+    width: 300px;
+}
+#blender.future{
+    width: 350px;
+}
+
+
+
+#rubiks_cube{
+    top: 240px;
+    width: 350px;
+}
+#rubiks_cube.future{
+    width: 400px;
+}
+
+
+
+#printing_3d{
+    top: 280px;
+    width: 200px;
+}
+#printing_3d.future{
+    width: 350px;
+}
+
+
+
+#food{
+    top: 320px;
+    width: 500px;
+}
+
+
+
+#piano{
+    top: 360px;
+    width: 250px;
+}
+#piano.future{
+    width: 300px;
+}
+
+
+
+#rubyonrails{
+    top: 400px;
+    width: 25px;
+}
+#rubyonrails.future{
+    width: 200px;
+}
+
+
+
+.empty{
+    width: 25px;
+}
+
+#empty1{
+    top: 440px;
+}
+
+#empty2{
+    top: 480px;
+}
+
+#empty3{
+    top: 520px;
+}
+
+.now{
+    display: inline;
+    position: absolute;
+    top: calc(var(--height) + 20px);
+    right: 600px;
+    width: 50px;
+    height: 25px;
+    background-color: var(--main_color);
+}
+
+.inayear{
+    right: 440px;
+    background-color: var(--future_color);
+}
+
+#keytext{
+    display: inline-block;
+    margin-left: 60px;
+    margin-top: 3px;
+    width: max-content;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
 }
