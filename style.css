@@ -1,0 +1,55 @@
+:root {
+    --height: 198px;
+    --main_color: #23b6fa;
+  }
+
+
+#octopus_head {
+    position: relative;
+    height: var(--height);
+    width: calc(var(--height) / 2);
+    border-radius: 0 var(--height) var(--height) 0;
+    background-color: var(--main_color);
+    left: 250px;
+    top: 30px;
+}
+
+.leg{
+    position: absolute;
+    right: 98px;
+    height: 38px;
+    /* width: 100px; */
+    background-color: var(--main_color);
+}
+
+.text{
+    width: max-content;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    position: absolute;
+    left: 10px;
+}
+
+#english_language{
+    width: 250px;
+}
+
+#boldness{
+    top: 40px;
+    width: 75px;
+}
+
+#python{
+    top: 80px;
+    width: 125px;
+}
+
+#HTML{
+    top: 120px;
+    width: 100px;
+}
+
+#CSS{
+    top: 160px;
+    width: 100px;
+}
