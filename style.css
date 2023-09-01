@@ -2,6 +2,7 @@
     --height: 558px;
     --main_color: #23b6fa;
     --future_color: #32a852;
+    --buffer: 50px;
 }
 
 
@@ -15,9 +16,19 @@
     top: 30px;
 }
 
+#buffer_rect{
+    background-color: var(--main_color);
+    position: absolute;
+    /* left: 100px; */
+    width: 135px;
+    left: -135px;
+    height: var(--height);
+    z-index: -3;
+}
+
 .leg{
     position: absolute;
-    right: calc(var(--height)/2);
+    right: calc(var(--height)/1.35);
     height: 38px;
     background-color: var(--main_color);
     border-radius: 20px 0 0 20px;
@@ -115,7 +126,7 @@ p{
     width: 200px;
 }
 #printing_3d.future{
-    width: 350px;
+    width: 300px;
 }
 
 
