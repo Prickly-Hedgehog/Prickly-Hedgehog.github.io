@@ -22,7 +22,7 @@
     width: calc(var(--height) / 2);
     /* background-color: aqua; */
     border-radius: 0 var(--height) var(--height) 0;
-    left: 650px;
+    left: 651px;
     /* top: 30px; */
     bottom: 528px;
     overflow: hidden;
