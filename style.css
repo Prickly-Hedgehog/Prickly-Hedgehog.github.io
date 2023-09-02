@@ -87,14 +87,22 @@
     height: 38px;
     background-color: var(--main_color);
     border-radius: 20px 0 0 20px;
+    list-style-type: none;
+    line-height: 40px;
+    white-space: nowrap;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    vertical-align: center;
+    text-indent: 20px;
 }
+
 
 .future{
     background-color: var(--future_color);
     z-index: -1;
 }
 
-.text{
+/* .text{
     width: max-content;
     font-family: Arial, sans-serif;
     font-weight: bold;
@@ -102,7 +110,7 @@
     left: 10px;
 
     line-height: 0.5;
-}
+} */
 
 p{
     color: black;
