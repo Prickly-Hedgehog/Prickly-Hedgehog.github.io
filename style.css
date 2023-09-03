@@ -96,7 +96,6 @@ body{
     white-space: nowrap;
     font-family: Arial, sans-serif;
     font-weight: bold;
-    vertical-align: center;
     text-indent: 20px;
 }
 
@@ -111,107 +110,150 @@ p{
     color: black;
 }
 
+.one{
+    width: calc(10% + 10%);
+}
+
+.two{
+    width: calc(20% + 10%);
+}
+
+.three{
+    width: calc(30% + 10%);
+}
+
+.four{
+    width: calc(40% + 10%);
+}
+
+.five{
+    width: calc(50% + 10%);
+}
+
+.six{
+    width: calc(60% + 10%);
+}
+
+.seven{
+    width: calc(70% + 10%);
+}
+
+.eight{
+    width: calc(80% + 10%);
+}
+
+.nine{
+    width: calc(90% + 10%);
+}
+
+.ten{
+    width: calc(100% + 10%);
+}
+
+/* li{
+    margin-bottom: 40px;
+} */
+
 
 
 #english_language{
-    width: 500px;
+    /* top: 0px; */
 }
 
 
 
 #boldness{
     top: 40px;
-    width: 100px;
+    /* width: calc(20% + 10%); */
 }
 #boldness.future{
-    width: 200px;
+    /* width: calc(40% + 10%); */
 }
 
 
 
 #python{
     top: 80px;
-    width: 200px;
 }
 #python.future{
-    width: 250px;
+    /* width: calc(50% + 10%); */
 }
 
 
 
 #HTML{
     top: 120px;
-    width: 150px;
+    /* width: calc(30% + 10%); */
 }
 #HTML.future{
-    width: 200px;
+    /* width: calc(40% + 10%); */
 }
 
 
 
 #CSS{
     top: 160px;
-    width: 100px;
+    /* width: calc(20% + 10%); */
 }
 #CSS.future{
-    width: 200px;
+    /* width: calc(40% + 10%); */
 }
 
 
 
 #blender{
     top: 200px;
-    width: 300px;
+    /* width: calc(60% + 10%); */
 }
 #blender.future{
-    width: 350px;
+    /* width: calc(70% + 10%); */
 }
 
 
 
 #rubiks_cube{
     top: 240px;
-    width: 350px;
+    /* width: calc(70% + 10%); */
 }
 #rubiks_cube.future{
-    width: 400px;
+    /* width: calc(80% + 10%); */
 }
 
 
 
 #printing_3d{
     top: 280px;
-    width: 200px;
+    /* width: calc(40% + 10%); */
 }
 #printing_3d.future{
-    width: 300px;
+    /* width: calc(60% + 10%); */
 }
 
 
 
 #food{
     top: 320px;
-    width: 500px;
+    /* width: 500px; */
 }
 
 
 
 #piano{
     top: 360px;
-    width: 250px;
+    /* width: 250px; */
 }
 #piano.future{
-    width: 300px;
+    /* width: 300px; */
 }
 
 
 
 #rubyonrails{
     top: 400px;
-    width: 25px;
+    /* width: 25px; */
 }
 #rubyonrails.future{
-    width: 200px;
+    /* width: 200px; */
 }
 
 
