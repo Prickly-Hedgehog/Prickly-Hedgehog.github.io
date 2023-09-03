@@ -2,52 +2,58 @@
     --height: 558px;
     --main_color: #23b6fa;
     --future_color: #32a852;
-    --buffer: 50px;
+    --buffer: 135px;
 }
 
 
 #octopus_head {
     position: relative;
     height: var(--height);
-    width: calc(var(--height) / 2);
-    border-radius: 0 var(--height) var(--height) 0;
+    width: calc(calc(var(--height) / 2) + var(--buffer));
+    border-radius: 0 558px 558px 0;
     background-color: var(--main_color);
     left: 650px;
     top: 30px;
 }
 
+body{
+    height: 0;
+    /* margin-top: 300px; */
+}
+
 #octopus_head_clip_container{
-    position: relative;
+    position: absolute;
     height: var(--height);
     width: calc(var(--height) / 2);
+    /* background-color: blue; */
     /* background-color: aqua; */
     border-radius: 0 var(--height) var(--height) 0;
-    left: 651px;
+    /* left: 651px; */
     /* top: 30px; */
     bottom: 528px;
     overflow: hidden;
 }
 
-#eye1{
+.eyes{
     position: absolute;
-    width: 50px;
-    height: 50px;
-    background-color: white;
     border-radius: 50%;
     z-index: 1;
+}
+
+#eye1{
+    background-color: white;
+    width: 50px;
+    height: 50px;
     top: 50px;
-    left: 50px;
+    left: 160px;
 }
 
 #eye2{
-    position: absolute;
     width: 15px;
     height: 15px;
     background-color: black;
-    border-radius: 50%;
-    z-index: 1;
     top: 60px;
-    left: 80px;
+    left: 190px;
 }
 
 #mouthclip{
@@ -69,16 +75,14 @@
     bottom: 100px;
 }
 
-
-
-#buffer_rect{
-    background-color: var(--main_color);
-    position: absolute;
-    /* left: 100px; */
-    width: 135px;
-    left: -135px;
-    height: var(--height);
-    z-index: -3;
+.face{
+    position: relative;
+    /* left: 10px; */
+    /* right: 100px; */
+    /* z-index: 50; */
+    top: 0px;
+    left: 135px;
+    /* top: 110px; */
 }
 
 .leg{
@@ -86,7 +90,7 @@
     right: calc(var(--height)/1.35);
     height: 38px;
     background-color: var(--main_color);
-    border-radius: 20px 0 0 20px;
+    border-radius: var(--height) 0 0 var(--height);
     list-style-type: none;
     line-height: 40px;
     white-space: nowrap;
@@ -102,15 +106,6 @@
     z-index: -1;
 }
 
-/* .text{
-    width: max-content;
-    font-family: Arial, sans-serif;
-    font-weight: bold;
-    position: absolute;
-    left: 10px;
-
-    line-height: 0.5;
-} */
 
 p{
     color: black;
@@ -252,7 +247,7 @@ p{
     background-color: var(--future_color);
 }
 
-#keytext{
+.keytext{
     display: inline-block;
     margin-left: 60px;
     margin-top: 3px;
