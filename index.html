@@ -1,12 +1,9 @@
 <!DOCTYPE html>
 <html>
-
-
+    
 <head>
     <link rel="stylesheet" href="./style.css">
 </head>
-
-
 
 <body>
 
@@ -14,24 +11,32 @@
 
     <div id="octopus_head">
 
-        <div id="buffer_rect"></div>
+        <div class="now">
+            <p class="keytext">Сейчас</p>
+        </div>
 
         <ul>
-                <li class="leg" id="english_language">Английский язык - 10</li>
-                <li class="leg" id="boldness">Смелость - 2</li>
-                <li class="leg" id="python">Python - 4</li>
-                <li class="leg" id="HTML">HTML - 3</li>
-                <li class="leg" id="CSS">CSS - 2</li>
-                <li class="leg" id="blender">Blender (3D моделирование, ренеринг и т.д.) - 6</li>
-                <li class="leg" id="rubiks_cube">Собирать кубик рубика - 7 (20 секунд)</li>
-                <li class="leg" id="printing_3d">3D printing - 4</li>
-                <li class="leg" id="food">Нравиться вкусно покушать - 10</li>
-                <li class="leg" id="piano">Играть на пианино - 5</li>
-                <li class="leg" id="rubyonrails">Ruby on rails - 0</li>
-                <li class="leg empty" id="empty1">Свободный слот</li>
-                <li class="leg empty" id="empty2">Свободный слот</li>
-                <li class="leg empty" id="empty3">Свободный слот</li>
+            <li class="leg" id="english_language">Английский язык - 10</li>
+            <li class="leg" id="boldness">Смелость - 2</li>
+            <li class="leg" id="python">Python - 4</li>
+            <li class="leg" id="HTML">HTML - 3</li>
+            <li class="leg" id="CSS">CSS - 2</li>
+            <li class="leg" id="blender">Blender (3D моделирование, ренеринг и т.д.) - 6</li>
+            <li class="leg" id="rubiks_cube">Собирать кубик рубика - 7 (20 секунд)</li>
+            <li class="leg" id="printing_3d">3D printing - 4</li>
+            <li class="leg" id="food">Нравиться вкусно покушать - 10</li>
+            <li class="leg" id="piano">Играть на пианино - 5</li>
+            <li class="leg" id="rubyonrails">Ruby on rails - 0</li>
+            <li class="leg empty" id="empty1">Свободный слот</li>
+            <li class="leg empty" id="empty2">Свободный слот</li>
+            <li class="leg empty" id="empty3">Свободный слот</li>
+        </ul>
 
+        <div class="now inayear">
+            <p class="keytext">Через 1 год</p>
+        </div>
+
+        <ul>
                 <li class="leg future" id="boldness">4</li>
                 <li class="leg future" id="python">5</li>
                 <li class="leg future" id="HTML">4</li>
@@ -41,36 +46,18 @@
                 <li class="leg future" id="printing_3d">6</li>
                 <li class="leg future" id="piano">6</li>
                 <li class="leg future" id="rubyonrails">4</li>
-                <li class="leg empty" id="empty1">Свободный слот</li>
-                <li class="leg empty" id="empty2">Свободный слот</li>
-                <li class="leg empty" id="empty3">Свободный слот</li>
         </ul>
 
-        <div id="eye1"></div>
+        <figure class="eyes" id="eye1"></figure>
 
-        <div id="eye2"></div>
+        <figure class="eyes" id="eye2"></figure>
 
-        
-
-
-
-        <div class="now">
-            <p id="keytext">Сейчас</p>
+        <div class="face" id="octopus_head_clip_container">
+            <div id="mouthclip">
+                <div id="mouth"></div>
+            </div>
         </div>
 
-        <div class="now inayear">
-            <p id="keytext">Через 1 год</p>
-        </div>
-
-        <div></div>
-
-    </div>
-
-
-    <div id="octopus_head_clip_container">
-        <div id="mouthclip">
-            <div id="mouth"></div>
-        </div>
     </div>
     
 </body>
