@@ -2,11 +2,14 @@
     --height: 558px;
     --main_color: #23b6fa;
     --future_color: #32a852;
-    --buffer: 135px;
+    --buffer: 145px;
 }
 
-
 .octopus{
+    float: left;
+}
+
+.octopus_head{
     /* display: flex; */
     /* flex-direction: column; */
     position: relative;
@@ -14,88 +17,113 @@
     width: calc(calc(var(--height) / 2) + var(--buffer));
     border-radius: 0 558px 558px 0;
     background-color: var(--main_color);
-    left: 350px;
+    /* flex-basis: 50%; */
+    /* left: 350px; */
     /* top: 30px; */
 }
 
 #octopus_head_clip_container{
-    position: absolute;
-    height: var(--height);
-    width: calc(var(--height) / 2);
+    /* position: absolute; */
+    /* height: var(--height); */
+    /* width: calc(var(--height) / 2); */
     /* background-color: blue; */
     /* background-color: aqua; */
-    border-radius: 0 var(--height) var(--height) 0;
+    /* border-radius: 0 var(--height) var(--height) 0; */
     /* left: 651px; */
     /* top: 30px; */
-    bottom: 528px;
-    overflow: hidden;
+    /* bottom: 558px; */
+    /* overflow: hidden; */
 }
 
 .eyes{
-    position: absolute;
+    /* position: absolute;
     border-radius: 50%;
-    z-index: 1;
+    z-index: 100; */
 }
 
-#eye1{
-    background-color: white;
+.eye1{
+    /* background-color: white;
     width: 50px;
-    height: 50px;
-    top: 50px;
-    left: 160px;
+    height: 50px; */
+    /* top: 50px; */
+    /* left: 160px; */
 }
 
-#eye2{
-    width: 15px;
+.eye2{
+    /* width: 15px;
     height: 15px;
     background-color: black;
     top: 60px;
-    left: 190px;
+    left: 190px; */
 }
 
-#mouthclip{
-    position: absolute;
+.mouthclip{
+    /* position: absolute;
     background-color: white;
     height: 420px;
     width: 420px;
     border-radius: 50%;
-    bottom: 100px;
+    bottom: 150px; */
     
 }
 
-#mouth{
-    position: absolute;
-    width: 400px;
-    height: 400px;
-    background-color: var(--main_color);
-    border-radius: 50%;
-    bottom: 100px;
+.face{
+    /* position: relative; */
+    /* left: 30%; */
 }
 
 .mouth{
-    position: relative;
-    /* left: 10px; */
-    /* right: 100px; */
-    /* z-index: 50; */
-    top: 0px;
-    left: 135px;
-    /* top: 110px; */
+    /* position: relative; */
+    /* width: 400px; */
+    /* height: 400px; */
+    /* background-color: var(--main_color); */
+    /* border-radius: 50%; */
+    /* bottom: 100px; */
+    /* top: 0px; */
+}
+
+/* .face::before{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+} */
+
+.octopus_head{
+    /* align-items: flex-end; */
+    /* margin-right: auto; */
+    /* width: max-content; */
+
+    
+}
+
+.octo_item{
+    /* height: 100px; */
+    /* width: 100px; */
+    /* background-color: black; */
+    /* margin-left: 0; */
 }
 
 .octopus_body{
-    /* display: flex; */
+    /* width: max-content; */
+    /* flex-basis: 80%; */
 }
 
-ul{
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* justify-content: flex-end; */
+li{
+    margin-bottom: 2px;
+}
+
+.flex_container{
+    display: flex;
+    flex-direction: row-reverse;
+    width: auto;
+    align-items: center;
 }
 
 .leg{
     position: relative;
-    /* display: flex; */
-    /* flex-direction: column; */
+    height: 38px;
+    /* display: flex;
+    flex-direction: column; */
     /* justify-content: right; */
     /* right: calc(var(--height)/1.35); */
     /* height: 38px; */
@@ -107,7 +135,9 @@ ul{
     font-family: Arial, sans-serif;
     font-weight: bold;
     text-indent: 20px;
-    right: 300px;
+    margin-left: auto;
+    /* flex: 2; */
+    /* right: 300px; */
     /* float: right;
     clear: both; */
 }
@@ -123,43 +153,47 @@ p{
 }
 
 .one{
-    width: calc(10% + 10%);
+    width: 10%;
 }
 
 .two{
-    width: calc(20% + 10%);
+    width: 20%;
 }
 
 .three{
-    width: calc(30% + 10%);
+    width: 30%;
 }
 
 .four{
-    width: calc(40% + 10%);
+    width: 40%;
 }
 
 .five{
-    width: calc(50% + 10%);
+    width: 50%;
 }
 
 .six{
-    width: calc(60% + 10%);
+    width: 60%;
 }
 
 .seven{
-    width: calc(70% + 10%);
+    width: 70%;
 }
 
 .eight{
-    width: calc(80% + 10%);
+    width: 80%;
 }
 
 .nine{
-    width: calc(90% + 10%);
+    width: 90%;
 }
 
 .ten{
-    width: calc(100% + 10%);
+    width: 100%;
+}
+
+.empty{
+    width: 5%;
 }
 
 /* li{
