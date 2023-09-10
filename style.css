@@ -39,28 +39,31 @@
     width: 30px;
     height: 30px;
     background-color: black;
-    top: 55px;
+    top: 53px;
     left: 230px;
 }
 
-.teeth{
-    position: absolute;
-    background-color: white;
-    border-radius: 100%;
-    left: 100px;
-    bottom: 90px;
-    width: 500px;
-    height: 500px;
+.octopus_head::before{
+  content: '';
+  position: absolute;
+  background-color: white;
+  border-radius: 100%;
+  left: 70px;
+  bottom: 70px;
+  width: 500px;
+  height: 500px;
+
 }
 
-.cover{
-    position: absolute;
-    background-color: var(--main_color);
-    border-radius: 100%;
-    right: 10px;
-    bottom: 70px;
-    width: 500px;
-    height: 500px;
+.octopus_head::after{
+  content: '';
+  position: absolute;
+  background-color: var(--main_color);
+  border-radius: 100%;
+  left: 60px;
+  bottom: 140px;
+  width: 500px;
+  height: 500px;
 }
 
 li{
@@ -70,8 +73,13 @@ li{
 .flex_container{
     display: flex;
     flex-direction: row-reverse;
-    width: auto;
     align-items: center;
+
+}
+
+ul{
+  width: 100%;
+  padding: 0px;
 }
 
 .leg{
@@ -95,50 +103,6 @@ li{
 
 p{
     color: black;
-}
-
-.one{
-    width: 10%;
-}
-
-.two{
-    width: 20%;
-}
-
-.three{
-    width: 30%;
-}
-
-.four{
-    width: 40%;
-}
-
-.five{
-    width: 50%;
-}
-
-.six{
-    width: 60%;
-}
-
-.seven{
-    width: 70%;
-}
-
-.eight{
-    width: 80%;
-}
-
-.nine{
-    width: 90%;
-}
-
-.ten{
-    width: 100%;
-}
-
-.empty{
-    width: 5%;
 }
 
 .inayear{
