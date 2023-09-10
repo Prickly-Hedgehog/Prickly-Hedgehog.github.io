@@ -10,102 +10,57 @@
 }
 
 .octopus_head{
-    /* display: flex; */
-    /* flex-direction: column; */
     position: relative;
     height: var(--height);
     width: calc(calc(var(--height) / 2) + var(--buffer));
     border-radius: 0 558px 558px 0;
     background-color: var(--main_color);
-    /* flex-basis: 50%; */
-    /* left: 350px; */
-    /* top: 30px; */
+    overflow: hidden;
+
 }
 
-#octopus_head_clip_container{
-    /* position: absolute; */
-    /* height: var(--height); */
-    /* width: calc(var(--height) / 2); */
-    /* background-color: blue; */
-    /* background-color: aqua; */
-    /* border-radius: 0 var(--height) var(--height) 0; */
-    /* left: 651px; */
-    /* top: 30px; */
-    /* bottom: 558px; */
-    /* overflow: hidden; */
+.face:before{  
+    content: '';
+    position: absolute;
+    z-index: 1;
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    top: 40px;
+    left: 185px;
 }
 
-.eyes{
-    /* position: absolute;
-    border-radius: 50%;
-    z-index: 100; */
-}
-
-.eye1{
-    /* background-color: white;
-    width: 50px;
-    height: 50px; */
-    /* top: 50px; */
-    /* left: 160px; */
-}
-
-.eye2{
-    /* width: 15px;
-    height: 15px;
+.face:after{  
+    content: '';
+    position: absolute;
+    z-index: 1;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
     background-color: black;
-    top: 60px;
-    left: 190px; */
+    top: 55px;
+    left: 230px;
 }
 
-.mouthclip{
-    /* position: absolute;
+.teeth{
+    position: absolute;
     background-color: white;
-    height: 420px;
-    width: 420px;
-    border-radius: 50%;
-    bottom: 150px; */
-    
+    border-radius: 100%;
+    left: 100px;
+    bottom: 90px;
+    width: 500px;
+    height: 500px;
 }
 
-.face{
-    /* position: relative; */
-    /* left: 30%; */
-}
-
-.mouth{
-    /* position: relative; */
-    /* width: 400px; */
-    /* height: 400px; */
-    /* background-color: var(--main_color); */
-    /* border-radius: 50%; */
-    /* bottom: 100px; */
-    /* top: 0px; */
-}
-
-/* .face::before{
-    width: 50px;
-    height: 50px;
-    background-color: white;
-} */
-
-.octopus_head{
-    /* align-items: flex-end; */
-    /* margin-right: auto; */
-    /* width: max-content; */
-
-    
-}
-
-.octo_item{
-    /* height: 100px; */
-    /* width: 100px; */
-    /* background-color: black; */
-    /* margin-left: 0; */
-}
-
-.octopus_body{
-    /* width: max-content; */
-    /* flex-basis: 80%; */
+.cover{
+    position: absolute;
+    background-color: var(--main_color);
+    border-radius: 100%;
+    right: 10px;
+    bottom: 70px;
+    width: 500px;
+    height: 500px;
 }
 
 li{
@@ -122,11 +77,6 @@ li{
 .leg{
     position: relative;
     height: 38px;
-    /* display: flex;
-    flex-direction: column; */
-    /* justify-content: right; */
-    /* right: calc(var(--height)/1.35); */
-    /* height: 38px; */
     background-color: var(--main_color);
     border-radius: var(--height) 0 0 var(--height);
     list-style-type: none;
@@ -136,17 +86,12 @@ li{
     font-weight: bold;
     text-indent: 20px;
     margin-left: auto;
-    /* flex: 2; */
-    /* right: 300px; */
-    /* float: right;
-    clear: both; */
 }
 
 .future{
     background-color: var(--future_color);
     z-index: -1;
 }
-
 
 p{
     color: black;
@@ -195,20 +140,6 @@ p{
 .empty{
     width: 5%;
 }
-
-/* li{
-    margin-bottom: 40px;
-} */
-
-/* .now{
-    display: inline;
-    position: absolute;
-    top: calc(var(--height) + 20px);
-    right: 600px;
-    width: 50px;
-    height: 25px;
-    background-color: var(--main_color);
-} */
 
 .inayear{
     right: 440px;
