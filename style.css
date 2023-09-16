@@ -82,21 +82,16 @@ h1 {
 } */
 
 ul {
-  margin-left: 20px;
+  /* margin-left: 00px; */
 }
 
-
-/* .octopus{
-  float: left;
-} */
-
-@media (max-width: 860px) {
+@media (max-width: 840px) {
   ul{
     font-size: 1.7vw;
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 780px) {
   .hidden_mobile {
     display: none;
   }
@@ -107,9 +102,9 @@ ul {
   }
 }
 
-@media (max-width: 440px) {
+@media (max-width: 410px) {
   ul{
-    font-size: 3.5vw;
+    font-size: 3.7vw;
     margin-right: 20px;
   }
 }
@@ -184,7 +179,7 @@ li:not(:last-child){
 }
 
 .octopus__body {
-  flex: 1;
+  flex-grow: 1;
 }
 
 .octopus__leg{
