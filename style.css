@@ -1,3 +1,5 @@
+/* Reset CSS 
+=====================*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -41,10 +43,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
-
-
-
+/*===================*/
 :root {
   --height: 558px;
   --main_color: #23b6fa;
@@ -52,7 +51,7 @@ table {
   --buffer: 145px;
 }
 
-h1 {
+.octopus__title {
   font-size: 30px;
   padding: 20px;
   font-weight: bold;
@@ -81,29 +80,25 @@ h1 {
   background: rgb(255, 255, 235);
 } */
 
-ul {
-  /* margin-left: 00px; */
-}
-
 @media (max-width: 840px) {
-  ul{
-    font-size: 1.7vw;
+  .octopus__body{
+    font-size: 1.75vw;
   }
 }
 
 @media (max-width: 780px) {
-  .hidden_mobile {
+  .octopus__head {
     display: none;
   }
 
-  ul{
+  .octopus__body{
     font-size: 100%;
     margin-right: 20px;
   }
 }
 
 @media (max-width: 410px) {
-  ul{
+  .octopus__body{
     font-size: 3.7vw;
     margin-right: 20px;
   }
@@ -165,11 +160,6 @@ ul {
   height: 500px;
 }
 
-/* FIXME. Reset.css */
-li:not(:last-child){
-  margin-bottom: 2px;
-}
-
 .octopus__flex_container{
   display: flex;
   /* flex-direction: row-reverse; */
@@ -180,6 +170,10 @@ li:not(:last-child){
 
 .octopus__body {
   flex-grow: 1;
+}
+
+.octopus__leg:not(:last-child){
+  margin-bottom: 2px;
 }
 
 .octopus__leg{
@@ -194,10 +188,6 @@ li:not(:last-child){
   margin-left: auto;
   border-radius: var(--height) 0 0 var(--height);
   background: rgba(0, 0, 0, 0.1);
-}
-
-li {
-  background: red;
 }
 
 .leg__title {
@@ -226,10 +216,6 @@ li {
   background-color: var(--future_color);
   border-radius: var(--height) 0 0 var(--height);
   z-index: -1;
-}
-
-p{
-  color: black;
 }
 
 .inayear{
